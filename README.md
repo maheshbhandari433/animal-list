@@ -1,5 +1,5 @@
 
-## Animmal gallery
+## Animal gallery
 
 ## Created with HTML, CSS, Javascript and React
 
@@ -8,6 +8,8 @@
 - The app fetches animals info from a REST API.
 - Click on a like button to add a likes to each animal.
 - Each animal has its id, name, image, button and like counts.
+
+
 
 
 
