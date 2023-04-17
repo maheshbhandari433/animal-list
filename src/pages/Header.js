@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
 import Animals from './Animals.js'
 import Birds from './Birds.js'
+import Search from '../ui/Search.js'
 
 
 const Header = () => {
@@ -29,11 +30,8 @@ const Header = () => {
         </li>
         </ul>
         </nav> 
-
-        <div className="search-box">
-        <input type="text" id="search" placeholder="Search here"/>
-       </div>
        
+       <Search />
         </div>
 
          <Routes>
@@ -50,7 +48,7 @@ const Header = () => {
 const Home = () => {
     return (
         <>
-        
+        <div className="home">
         <NavLink to="/animals">
         <div className="animals">
         <img src="./animals.jpg"  alt="animals" width="600" height="500"/>
@@ -62,6 +60,7 @@ const Home = () => {
         <img src="./birds.jpg"  alt="birds" width="600" height="500"/>
         </div>
         </NavLink>
+        </div>
         
         </>
     )

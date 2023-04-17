@@ -1,23 +1,19 @@
-import { Component } from 'react'
 import Header from './pages/Header.js'
-import './ui/App.css';
+import './ui/App.css'
 
-class App extends Component {
-  
 
-    render() {
+const App = () => {
 
-        return (
-          <>
-          
-            <Header/> 
 
-            </>
-        )
-    }
-        
-  }
+  return (
+    <>
+    
+      <Header/> 
 
+      </>
+  )
+
+}
  
 
 

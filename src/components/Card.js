@@ -1,7 +1,5 @@
 import React, {Component} from 'react'
-import { animals, birds } from '../animalList.js'
 
-console.log(animals, birds)
 const Card =  (props) => {
 
 class Card extends Component {
@@ -15,8 +13,6 @@ class Card extends Component {
             })
         }
 
-
-
         render() {
             return (
                 <>
@@ -24,13 +20,13 @@ class Card extends Component {
 
                 <p id='name'>{props.name}<br/>Likes: {this.state.counter}</p>
 
-                <div><img src = {`https://source.unsplash.com/500x400/?${props.name}`}
+                <div><img src = {`https://source.unsplash.com/400x300/?${props.name}`}
                 alt={props.name} /></div> 
 
-            <button onClick = {this.counterHandler}>Like</button>
+            <button onClick={this.counterHandler}>Like</button>
 
             <div className = "close-button">
-            <button onClick={props.removeCard} className="close">x</button>
+            <button onClick ={props.removeCard} className="close">X</button>
             </div>
             </div>
             </>

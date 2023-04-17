@@ -2,43 +2,44 @@
   padding:0;
   margin: 0;
   background-color: aliceblue;
-  text-align: center;
+  text-align: center; 
 }
 
 #title {
   text-align: center;
   font-size: xx-large;
+  margin-bottom: 1em;
 }
 
  nav ul li {
   display: inline-flex;
-  padding: 2em;
-  
+  padding: 1.5em;
+
 } 
 
 .home {
-  display: flex;
+  display:flex;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;   
+  } 
   
-}
-
 main {
   display: flex;
-  justify-content: center;
+  justify-content: center; 
   flex-wrap: wrap;
-}
+  overflow: hidden;
+  
+} 
 
 .card {
-  position: relative;
-  width: 600px;
-  height: 400px;
+  position: relative; 
+  width: 400px;
+  height: 300px;
 } 
 
  #name {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -47,17 +48,18 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(228, 249, 249, 0.834);
-  opacity: 80%;  
-  color: black;
+  background-color: rgba(99, 101, 101, 0.979);
+  opacity: 90%;  
+  color: white;
+  font-size: small;
 }
 
 .card button {
   position: absolute;
   bottom: 0; 
   right: 42%;
-  width:80px;
-  height: 50px;
+  width:50px;
+  height: 30px;
   border-radius: 5px;
   border: none;
   font-size: medium;
@@ -73,20 +75,28 @@ main {
 
 .close-button {
   position: absolute;
-  top: 50px;
-  right: 50px;
+  top: 20px;
+  right: 0;
+}
+
+.close-button button {
+  color: black;
+  width: 25px;
+  height:20px;
+  opacity: 80%
 }
 
 .search-box {
-  padding: 2em;
+  padding: 1em;
 } 
 
-#search {
+input {
   width: 200px;
-  height: 50px;
-  background-color: rgba(225, 232, 239, 0.265);
-  border: 1 px solid rgba(248, 243, 243, 0.105);
+  height: 40px;
+  background-color: rgba(189, 194, 194, 0.995);
+  border: none;
   border-radius: 5px;
+  color: black;
 }
 
 

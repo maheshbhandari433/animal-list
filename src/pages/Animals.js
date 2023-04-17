@@ -2,72 +2,52 @@ import { Component } from 'react'
 import Card from '../components/Card.js'
 import '../ui/App.css';    
 import {animals} from '../animalList.js'
-/* import Search from './Search.js'  */
-  
-/* const Animals = () => { */
+/* import Search from '../ui/Search.js'  */
+
 
 class Animals extends Component {
 
     state = {
     animals: animals,
     searchInput: ''
-  }  
-
-  /* removeHandler = (name) => {
+  } 
+  
+  removeHandler = (name) => {
     const updatedArray = this.state.animals.filter(animal => animal.name !== name)
-   this.setState({
-     animals: updatedArray
-   }) 
- } */
-
-/* Animals = (props) => {
-  const searchFilter = props.data.filter(animal => {
-    return animal.name.includes(props.searchInput)
-   }) */ 
-
- /*   searchFilter.map((item) => <Card
-        key={item.name}
-        name={item.name}
-         />)}
- } */
-
-
+    this.setState({
+      animals: updatedArray
+    })
+  }
 
 /*   searchHandler = (e) => {
-  this.setState({
-    searchInput: e.target.value
-  })
-}  */
+    this.setState({
+      searchInput: e.target.value
+    })
+  }  */
 
     render() {
 
-        return <>
+        return <>   
+
+        {/*  <Search searchHandler={this.searchHandler}
+              searchInput={this.state.searchInput}/> */} 
       
        <p id = 'title'>Animal Gallery</p>
       <main>
-     {/*  <Search searchHandler = {this.props.searchHandler} /> */}
 
-      
-    
        {this.state.animals.map(animal => 
         <ul  key = {animal.name}>
-      <Card name = {animal.name}
-           /*  searchInput = {this.state.searchInput}
-            searchHandler = {this.searchHandler} */  
-      />
+        <Card name = {animal.name}
+            removeCard = {() => this.removeHandler(animal.name)}
+            data={this.state.animals}/>
       </ul>)} 
 
-</main>  
+      </main>  
 
     </> 
     }  
     
-  }  
-
-
-/* } */
-
- 
+  } 
 
 
 export default Animals 
